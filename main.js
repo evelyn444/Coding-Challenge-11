@@ -16,8 +16,8 @@ function calculateTotalPrice(){
     const totalPrice = productPrice * quantity; // price changes based on the quantity selected
     totalPriceElement.textContent = totalPrice.toFixed(2);
 }
-productSelector.addEventListener('change', updateTotalPrice);
-quantityInput.addEventListener('input',updateTotalPrice);
+productSelector.addEventListener('change', calculateTotalPrice);
+quantityInput.addEventListener('input',calculateTotalPrice);
 
 //Task 4: Handle Order Submission
 placeOrderButton.addEventListener('click', function(){ //place order button when clicked
