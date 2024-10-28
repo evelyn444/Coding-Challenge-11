@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Management System</title>
+</head>
+<body>
+    <h2>Place Your Makeup Order</h2>
+
+    <label for="product-selector"> Select a Product:</label>
+    <select id="product-selector">
+                <option value="12">Lipstick: $12</option>
+                <option value="7">Blush: $7</option>
+                <option value="15"> Eyeshadow: $15</option>
+     </select>
+
+     <label for="quantity"> Quantity</label>
+     <input type="number" id="quantity" value="1" min="1">
+
+     <p> Total Price is: $<span id="total-price">2</span></p>
+
+     <button id="place-order">Place Your Order</button>
+     <p id="order-summary"></p>
+
+    <script src="main.js"></script>
+</body>
+</html>
